@@ -213,8 +213,14 @@ export class AuthModule {}
 
 #### Implementing Passport local
 
-Now we can implement our Passport **local authentication strategy**. Create a file called `local.strategy.ts` in the `auth` folder, and add the following code:
+Now we can implement our Passport **local authentication strategy**.
+Create a file called local.strategy.ts in the auth folder:
 
+`$ nest g class auth/Local.Strategy`
+
+Then and add the following code:
+
+;
 ```typescript
 @@filename(auth/local.strategy)
 import { Strategy } from 'passport-local';
