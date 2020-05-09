@@ -220,7 +220,6 @@ Create a file called local.strategy.ts in the auth folder:
 
 Then and add the following code:
 
-;
 ```typescript
 @@filename(auth/local.strategy)
 import { Strategy } from 'passport-local';
