@@ -369,6 +369,8 @@ $ # result -> {"userId":1,"username":"john"}
 
 While this works, passing the strategy name directly to the `AuthGuard()` introduces magic strings in the codebase. Instead, we recommend creating your own class, as shown below:
 
+`$ nest g guard auth/LocalAuth`
+
 ```typescript
 @@filename(auth/local-auth.guard)
 import { Injectable } from '@nestjs/common';
